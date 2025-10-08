@@ -1,0 +1,202 @@
+{
+  "data": [
+    {
+      "component": "WC",
+      "lower_bound": "75.0%",
+      "patent_number": "272a70f5-660e-46b5-a7d4-48f6e39d5d06",
+      "alloy name": "Cobalt alloy,Co 20-25,WC 75-80",
+      "upper_bound": "80.0%",
+      "classification": "-",
+      "pn": "KR1020130043800A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "20.0%",
+      "patent_number": "272a70f5-660e-46b5-a7d4-48f6e39d5d06",
+      "alloy name": "Cobalt alloy,Co 20-25,WC 75-80",
+      "upper_bound": "25.0%",
+      "classification": "-",
+      "pn": "KR1020130043800A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "72.0%",
+      "patent_number": "3fddb072-713f-4bfb-8ffd-dae7147938a1",
+      "alloy name": "Cobalt alloy,Co 20,WC 72,Cr 8",
+      "upper_bound": "72.0%",
+      "classification": "-",
+      "pn": "JP2012112012A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "20.0%",
+      "patent_number": "3fddb072-713f-4bfb-8ffd-dae7147938a1",
+      "alloy name": "Cobalt alloy,Co 20,WC 72,Cr 8",
+      "upper_bound": "20.0%",
+      "classification": "-",
+      "pn": "JP2012112012A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "72.0%",
+      "patent_number": "872829ad-1df6-44d0-9498-bc04e52e1384",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "72.0%",
+      "classification": "-",
+      "pn": "JP2009167504A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "28.0%",
+      "patent_number": "872829ad-1df6-44d0-9498-bc04e52e1384",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "28.0%",
+      "classification": "-",
+      "pn": "JP2009167504A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "71.0%",
+      "patent_number": "51a18189-3062-4a98-889a-bcaa0f6e296e",
+      "alloy name": "Cobalt alloy,Co 20,WC 71,TaC 5,TiC 3,Cr<sub>3</sub>C<sub>2</sub> 1",
+      "upper_bound": "71.0%",
+      "classification": "-",
+      "pn": "JP2006152433A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "20.0%",
+      "patent_number": "51a18189-3062-4a98-889a-bcaa0f6e296e",
+      "alloy name": "Cobalt alloy,Co 20,WC 71,TaC 5,TiC 3,Cr<sub>3</sub>C<sub>2</sub> 1",
+      "upper_bound": "20.0%",
+      "classification": "-",
+      "pn": "JP2006152433A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "72.0%",
+      "patent_number": "e998da08-9e61-4da9-81e8-09546f4dcebc",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "72.0%",
+      "classification": "-",
+      "pn": "JP2001335877A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "28.0%",
+      "patent_number": "e998da08-9e61-4da9-81e8-09546f4dcebc",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "28.0%",
+      "classification": "-",
+      "pn": "JP2001335877A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "72.0%",
+      "patent_number": "1eb321bd-5cb0-4cad-b088-b50f1f2a2b25",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "72.0%",
+      "classification": "-",
+      "pn": "JP2001187431A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "28.0%",
+      "patent_number": "1eb321bd-5cb0-4cad-b088-b50f1f2a2b25",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "28.0%",
+      "classification": "-",
+      "pn": "JP2001187431A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "71.0%",
+      "patent_number": "678669b5-4aed-49c0-bf7a-159870fdd653",
+      "alloy name": "Cobalt alloy,Co 20,WC 71,TaC 5,TiC 3,Cr<sub>3</sub>C<sub>2</sub> 1",
+      "upper_bound": "71.0%",
+      "classification": "-",
+      "pn": "KR1020000039443A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "20.0%",
+      "patent_number": "678669b5-4aed-49c0-bf7a-159870fdd653",
+      "alloy name": "Cobalt alloy,Co 20,WC 71,TaC 5,TiC 3,Cr<sub>3</sub>C<sub>2</sub> 1",
+      "upper_bound": "20.0%",
+      "classification": "-",
+      "pn": "KR1020000039443A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "65.0%",
+      "patent_number": "02c2637b-7c31-4ea4-aee1-2482935f929a",
+      "alloy name": "Cobalt alloy,Co 35,WC 65",
+      "upper_bound": "65.0%",
+      "classification": "-",
+      "pn": "JP2000129386A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "35.0%",
+      "patent_number": "02c2637b-7c31-4ea4-aee1-2482935f929a",
+      "alloy name": "Cobalt alloy,Co 35,WC 65",
+      "upper_bound": "35.0%",
+      "classification": "-",
+      "pn": "JP2000129386A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "72.0%",
+      "patent_number": "b32de7bb-5a06-4107-803f-a66d5ff4a85a",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "72.0%",
+      "classification": "-",
+      "pn": "JP2000001733A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "28.0%",
+      "patent_number": "b32de7bb-5a06-4107-803f-a66d5ff4a85a",
+      "alloy name": "Cobalt alloy,Co 28,WC 72",
+      "upper_bound": "28.0%",
+      "classification": "-",
+      "pn": "JP2000001733A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "64.0%",
+      "patent_number": "4fb5fbd4-72dc-4f61-b326-6f35f17b4c31",
+      "alloy name": "Cobalt alloy,Co 36,WC 64",
+      "upper_bound": "64.0%",
+      "classification": "-",
+      "pn": "JP1996143987A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "36.0%",
+      "patent_number": "4fb5fbd4-72dc-4f61-b326-6f35f17b4c31",
+      "alloy name": "Cobalt alloy,Co 36,WC 64",
+      "upper_bound": "36.0%",
+      "classification": "-",
+      "pn": "JP1996143987A"
+    },
+    {
+      "component": "WC",
+      "lower_bound": "65.0%",
+      "patent_number": "ea32c4ee-3bd0-4017-abe0-ebc1cc8f274e",
+      "alloy name": "Cobalt alloy,Co 35,WC 65",
+      "upper_bound": "65.0%",
+      "classification": "-",
+      "pn": "JP1995003306A"
+    },
+    {
+      "component": "Co",
+      "lower_bound": "35.0%",
+      "patent_number": "ea32c4ee-3bd0-4017-abe0-ebc1cc8f274e",
+      "alloy name": "Cobalt alloy,Co 35,WC 65",
+      "upper_bound": "35.0%",
+      "classification": "-",
+      "pn": "JP1995003306A"
+    }
+  ]
+}

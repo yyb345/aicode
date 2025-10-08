@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能问答系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 智能问答系统</h1>
+            <div class="service-selector">
+                <label for="serviceSelect">选择AI服务:</label>
+                <select id="serviceSelect" onchange="changeService()">
+                    <option value="openai">OpenAI</option>
+                    <option value="spring-ai">Spring AI Alibaba</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message ai-message">
+                    你好！我是你的智能助手，有什么问题可以问我哦～<br><br>
+                    <strong>🔧 可用工具：</strong><br>
+                    🌤️ 天气查询 - 可以查询任意城市的当前天气和天气预报<br><br>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="message ai-message">
+                    AI正在思考中<span class="loading-dots"></span>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" class="input-field" id="questionInput" 
+                       placeholder="请输入你的问题..." 
+                       onkeypress="handleKeyPress(event)">
+                <button class="send-button" id="sendButton" onclick="sendQuestion()">
+                    发送
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
