@@ -28,7 +28,6 @@
 - Maven 3.6+
 - OpenAI API Key（可选）
 - 阿里云DashScope API Key（可选）
-- OpenWeatherMap API Key（天气功能）
 
 ### 2. 配置API Key
 
@@ -37,11 +36,6 @@
 2. 登录你的账户
 3. 进入 API Keys 页面
 4. 创建新的API Key（格式通常为 `sk-...`）
-
-**获取OpenWeatherMap API Key**
-1. 访问 [OpenWeatherMap官网](https://openweathermap.org/api)
-2. 注册账户并登录
-3. 在API Keys页面创建新的API Key（免费版本即可）
 
 **配置方法**
 
@@ -61,18 +55,12 @@ spring:
       endpoint: https://dashscope.aliyuncs.com/api/v1
       api-key: your-dashscope-api-key-here  # 替换为你的实际API Key
 
-# 天气工具配置
-weather:
-  api:
-    key: your-openweathermap-api-key-here  # 替换为你的实际API Key
-    base-url: https://api.openweathermap.org/data/2.5
 ```
 
 **环境变量方式**
 ```bash
 export OPENAI_API_KEY=your-openai-api-key-here
 export ALIBABA_API_KEY=your-dashscope-api-key-here
-export WEATHER_API_KEY=your-openweathermap-api-key-here
 ```
 
 ### 3. 运行应用
@@ -113,32 +101,6 @@ mvn spring-boot:run
 **检查服务状态**
 - **GET** `/api/qa/spring-ai/status`
 
-### 天气工具接口
-
-**获取当前天气**
-- **GET** `/api/weather/current?city=城市名`
-
-**获取天气预报**
-- **GET** `/api/weather/forecast?city=城市名`
-
-**流式获取当前天气**
-- **GET** `/api/weather/current/stream?city=城市名`
-
-**流式获取天气预报**
-- **GET** `/api/weather/forecast/stream?city=城市名`
-
-**智能天气查询**
-- **POST** `/api/weather/query`
-
-**流式智能天气查询**
-- **POST** `/api/weather/query/stream`
-
-**获取工具信息**
-- **GET** `/api/weather/tool/info`
-
-**检查工具状态**
-- **GET** `/api/weather/tool/status`
-
 ### 请求格式
 
 所有问答接口的请求体格式相同：
@@ -176,36 +138,6 @@ mvn spring-boot:run
 }
 ```
 
-**天气信息响应**:
-```json
-{
-  "weather": "📍 城市：北京\n🌡️ 温度：15°C\n☁️ 天气：多云",
-  "city": "北京",
-  "status": "success"
-}
-```
-
-**工具信息响应**:
-```json
-{
-  "weather_tool": {
-    "description": "天气查询工具 - 可以查询指定城市的当前天气和天气预报信息",
-    "functions": ["getCurrentWeather(city) - 获取当前天气", "getWeatherForecast(city) - 获取天气预报"],
-    "available": true
-  },
-  "status": "success"
-}
-```
-
-**智能天气查询响应**:
-```json
-{
-  "result": "📍 城市：北京\n🌡️ 温度：15°C\n☁️ 天气：多云",
-  "city": "北京",
-  "queryType": "current",
-  "status": "success"
-}
-```
 
 ## 项目结构
 
@@ -215,13 +147,11 @@ src/
 │   ├── java/com/example/qa/
 │   │   ├── QAApplication.java          # 应用启动类
 │   │   ├── controller/
-│   │   │   ├── QAController.java       # 问答控制器
-│   │   │   └── WeatherController.java  # 天气查询控制器
+│   │   │   └── QAController.java       # 问答控制器
 │   │   ├── service/
 │   │   │   ├── OpenAIService.java      # OpenAI服务实现
 │   │   │   └── SpringAIService.java     # Spring AI Alibaba服务实现
 │   │   └── tool/
-│   │       └── WeatherTool.java        # 天气查询工具
 │   └── resources/
 │       ├── application.yml             # 应用配置
 │       └── static/
@@ -246,13 +176,6 @@ src/
 |--------|------|--------|
 | `spring.ai.alibaba.api-key` | DashScope API密钥 | `your-dashscope-api-key` |
 | `spring.ai.alibaba.endpoint` | API端点 | `https://dashscope.aliyuncs.com/api/v1` |
-
-### 天气工具配置
-
-| 配置项 | 说明 | 默认值 |
-|--------|------|--------|
-| `weather.api.key` | OpenWeatherMap API密钥 | `your-openweathermap-api-key` |
-| `weather.api.base-url` | API基础URL | `https://api.openweathermap.org/data/2.5` |
 
 ### 服务器配置
 
@@ -317,11 +240,6 @@ src/
    - 确认后端服务正常运行
    - 验证API端点是否正确
 
-6. **天气工具无法使用**
-   - 检查OpenWeatherMap API Key是否正确配置
-   - 确认网络可以访问OpenWeatherMap服务
-   - 验证城市名称是否正确（支持中英文）
-   - 检查API Key是否有足够的调用次数
 
 ### 日志调试
 
@@ -347,16 +265,6 @@ curl http://localhost:8080/api/qa/spring-ai/status
 # 获取支持的模型列表
 curl http://localhost:8080/api/qa/spring-ai/models
 
-# 测试天气工具状态
-curl http://localhost:8080/api/weather/tool/status
-
-# 测试天气查询功能
-curl "http://localhost:8080/api/weather/current?city=北京"
-
-# 测试智能天气查询
-curl -X POST http://localhost:8080/api/weather/query \
-  -H "Content-Type: application/json" \
-  -d '{"question": "北京今天天气怎么样？"}'
 ```
 
 ## 许可证

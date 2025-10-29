@@ -39,7 +39,7 @@ public class Test {
 
         for (Iterator<String> it = pathsNode.fieldNames(); it.hasNext(); ) {
             String path = it.next();
-            if (path.contains("/material/docAnalyzer/getExtractMaterial")) {
+            if (path.equals("/material/docAnalyzer/getExtractMaterial")) {
                 // 取出原始 path 节点
                 ObjectNode pathNode = (ObjectNode) pathsNode.get(path);
 

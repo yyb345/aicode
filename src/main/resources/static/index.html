@@ -9,13 +9,16 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🤖 智能问答系统</h1>
+            <h1>🤖 材料智能问答</h1>
             <div class="service-selector">
                 <label for="serviceSelect">选择AI服务:</label>
                 <select id="serviceSelect" onchange="changeService()">
                     <option value="openai">OpenAI</option>
                     <option value="spring-ai">Spring AI Alibaba</option>
                 </select>
+                <button class="materials-button" id="materialsButton" onclick="toggleMaterialsDrawer()">
+                    📚 材料库
+                </button>
             </div>
         </div>
         
@@ -23,8 +26,6 @@
             <div class="messages" id="messages">
                 <div class="message ai-message">
                     你好！我是你的智能助手，有什么问题可以问我哦～<br><br>
-                    <strong>🔧 可用工具：</strong><br>
-                    🌤️ 天气查询 - 可以查询任意城市的当前天气和天气预报<br><br>
                 </div>
             </div>
             
@@ -42,6 +43,18 @@
                     发送
                 </button>
             </div>
+        </div>
+    </div>
+
+    <!-- 材料库抽屉 -->
+    <div class="drawer-overlay" id="drawerOverlay" onclick="toggleMaterialsDrawer()"></div>
+    <div class="drawer" id="materialsDrawer">
+        <div class="drawer-header">
+            <h2>📚 材料库</h2>
+            <button class="drawer-close" onclick="toggleMaterialsDrawer()">×</button>
+        </div>
+        <div class="drawer-content" id="drawerContent">
+            <div class="loading-text">正在加载...</div>
         </div>
     </div>
 
